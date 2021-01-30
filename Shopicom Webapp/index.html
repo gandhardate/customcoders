@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+   
+    <script src="js/script.js"></script>
+    <script src="btstrp/jqu.js"></script>
+
+    <title>Shopicom</title>
+  </head>
+  <body  onload="stoppreloader()" >
+    <div class="spinner-wrapper" id="preload">
+      <div class="spinner"></div>
+      </div>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">Shopicom</a>
+      
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+           
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Find a shop near you</a>
+            </li>
+          
+            <li class="nav-item">
+              <a class="nav-link" href="registration.html">Register your Business</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Aboutus.html">About us</a>
+            </li>
+           
+          </ul>
+          
+        </div>
+      </nav>
+      
+      <div id="main-wrapper">
+          
+    
+       <center> <div id="upbar">
+    <FORM method=GET action="http://www.google.com/search">
+    <TABLE bgcolor="#95a5a6"><tr><td>
+    
+    <INPUT id="searchbar" TYPE=text name=q size=31 maxlength=255 placeholder="Type the text to be searched">
+    <INPUT TYPE=hidden name=hl value="en">
+    <INPUT id="button" class="btn btn-info" type=submit name=btnG VALUE="Search your message on Google" >
+    </td></tr></TABLE>
+    </FORM>
+    
+     
+      </div>
+    </center>
+    
+    <form>
+   
+   
+      <div id="login"  style="overflow:auto;" >
+        
+        <div class="jumbotron" id="jumb" style="background-image:url(img/divbg.jpg) ;" onmouseover="enljumb()" onmouseout="decjumb()">
+          <h1 class="ml6"><span class="text-wrapper">
+            <span class="letters">Shopicom</span>
+          </span></h1>
+          <p>A platform for small scale businesses with large ambitions...</p>
+          <p><a class="btn btn-primary btn-lg" role="button" href="Aboutus.html">Learn more</a></p>
+        </div>
+        <center>
+        <div id="lg" class="alert alert-primary" >
+        <form  >
+          <h2 class="text-black h1">Enter your name!</h2><br>
+          <input id="name" class="form-control mr-sm-2"  placeholder="Your name" >
+          <br><input type="button" class="btn btn-primary btn-lg btn-block" value="Find a shop near you" onclick='javascript:login();'></input>
+        </form></center> <br>
+        <center>
+        <div class="card" id="regbus">
+          <div class="card-header">
+           Want to register with Shopicom?
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Do you own a business?</h5>
+            <p class="card-text">If you own a start up and want to grow your busniess, please check out the registration process below...</p>
+            <a href="registration.html" class="btn btn-primary">Go to registration page</a>
+          </div>
+        </div></center>
+      </div><br>
+      </div>
+      
+    <center>
+    <div id="log" class="alert alert-primary" style="overflow:auto;" align='center'>
+      <div class="form-group col-md-4">
+        <label for="locality">Select locality</label>
+        <select id="locality" class="form-control">
+          <option selected>Complete City</option>
+          <option>Hadapsar</option>
+          <option>Kothrud</option>
+          <option disabled>*This is only a prototype .</option>
+        </select>
+        <label for="cat">Select the Category of service you need</label>
+        <select id="cat" class="form-control">
+          <option selected>General store(default)</option>
+          <option>Stationary and Educational materials.</option>
+          <option>Medical and other health services</option>
+          <option>Agriculture and associated products</option>
+          <option disabled>*This is only a prototype .</option>
+        </select><br>
+
+        <button onclick="findshop()" class="btn btn-primary">Find Shop</button>
+      </div>
+      </div>
+      <div id="shopfinal" class="alert alert-danger">
+
+       Links to websites developed of each supplier will be displayed here.<br>Tap below to view a sample of Auto-generated website.<br>
+       <br><button type="button" class="btn btn-primary btn-lg btn-block" onclick="gotosample()">View Sample Website</button>
+     
+      </div>
+     
+    </div>
+  
+   
+    
+    <hr>
+   
+     
+    </center>
+    
+   
+ 
+    
+    
+    
+    
+ 
+    <footer id="foot">
+      <div class="pos-f-t">
+        <div class="collapse" id="navbarToggleExternalContent">
+          <div class="bg-dark p-4">
+            <h5 class="text-white h4"><b>Contact us</b></h5>
+            <span class="text-muted">gandhardate@gmail.com</span>
+            <h6 class="text-white h4">Developed for Codebreak 2.0</h6>
+          </div>
+        </div>
+        <nav class="navbar navbar-dark bg-dark">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-brand mb-0 h1">Developed by Team Custom Coders</span>
+          </button>
+        </nav>  
+    </footer>
+  
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/js1.js" crossorigin="anonymous"></script>
+    <script src="js/js2.js" crossorigin="anonymous"></script>
+    <script src="js/js3.js" crossorigin="anonymous"></script>
+    <script>
+      var shopfinal=document.getElementById("shopfinal");
+      var preld= document.getElementById("preload");
+      var loginv= document.getElementById("log");
+     
+      function stoppreloader()
+      {
+       setTimeout(
+       () => {
+         preld.style.display= 'none';
+         loginv.style.display= 'none';
+         shopfinal.style.display='none';
+       },
+       2 * 1000
+     );
+    
+     
+      }  
+     
+           
+           </script>
+  </body>
+</html>
