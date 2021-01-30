@@ -1,2 +1,6 @@
 # customcoders
-For codebreak2.0
+For codebreak 
+Project Name: Shopicom
+Platforms :
+1.Web App
+2.Android App
